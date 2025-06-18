@@ -3,174 +3,153 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Boostez votre avenir avec nos Formations CPF</title>
+  <title>Formation CPF 100% Financée | Vérifiez votre éligibilité</title>
+  <meta name="description" content="Formations certifiantes CPF : Anglais, Excel, Bureautique. Sans reste à charge possible. Vérifiez votre éligibilité en 30 secondes.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #f0f4f8, #ffffff);
       margin: 0;
       padding: 0;
+      background: #f5f7fb;
       color: #333;
     }
-    header, footer {
-      text-align: center;
-      padding: 30px 20px;
-      background-color: #004080;
+    header {
+      background-color: #003366;
       color: white;
+      padding: 20px 10px;
+      text-align: center;
     }
-    header img, footer img {
-      max-width: 200px;
-      height: auto;
-      margin-bottom: 10px;
+    header img {
+      height: 50px;
+      vertical-align: middle;
     }
     .container {
       max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-    .formation {
+      margin: 30px auto;
       background: white;
+      padding: 30px;
       border-radius: 12px;
-      padding: 25px;
-      margin-bottom: 25px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
-    .formation img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-bottom: 15px;
+    h1, h2 {
+      color: #003366;
     }
-    h1, h2, h3 {
-      color: #004080;
-    }
-    form {
-      background: #fff;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-      margin-top: 40px;
-    }
-    input, select, textarea, button {
-      width: 100%;
-      padding: 12px;
-      margin: 12px 0;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-    }
-    button {
-      background-color: #0071e3;
-      color: white;
-      font-size: 16px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    button:hover {
-      background-color: #005bb5;
-    }
-    .formation-list {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+    .formations {
+      display: flex;
+      flex-wrap: wrap;
       gap: 20px;
     }
-    blockquote {
-      font-style: italic;
-      color: #666;
-      margin: 30px 0;
-      border-left: 4px solid #004080;
-      padding-left: 15px;
+    .formation-card {
+      width: calc(33% - 20px);
+      background: #eef3fa;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
     }
-    @media(max-width: 768px) {
-      .formation-list {
-        grid-template-columns: 1fr;
+    .formation-card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 10px;
+    }
+    form {
+      margin-top: 40px;
+    }
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    form input, form select, form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form button {
+      background-color: #003366;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    .note {
+      font-size: 0.9em;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #003366;
+      color: white;
+      font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+      .formation-card {
+        width: 100%;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Logo_MonCompteFormation.svg/512px-Logo_MonCompteFormation.svg.png" alt="Logo Mon Compte Formation">
-    <img src="https://upload.wikimedia.org/wikipedia/fr/c/c3/Logo_r%C3%A9publique_fran%C3%A7aise_%282020%29.svg" alt="Logo République Française">
-    <h1>Boostez votre avenir avec nos formations 100% éligibles au CPF</h1>
-    <p>Choisissez la formation qui correspond à vos ambitions</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Logo_CPF.svg/512px-Logo_CPF.svg.png" alt="Logo CPF">
+    <h1>Formations CPF 100% Finançables</h1>
+    <p>Sans reste à charge possible • Certifiantes • En ligne</p>
   </header>
 
   <div class="container">
-    <p>Le Compte Personnel de Formation (CPF) vous permet de financer vos projets professionnels. Depuis le 2 mai 2024, un reste à charge obligatoire de <strong>102,23€</strong> s'applique. C’est le bon moment pour en profiter !</p>
-
-    <blockquote>
-      "La connaissance est un investissement durable. Faites le premier pas aujourd’hui."
-    </blockquote>
-
-    <div class="formation-list">
-      <!-- Formations à répéter dynamiquement -->
-      <section class="formation">
-        <h2>🚀 IA & Vente : Intégrer l’Intelligence Artificielle dans le Cycle Commercial</h2>
-        <img src="https://www.captain-data.com/hubfs/blog/openai-ai-for-sales.jpg" alt="IA et ventes">
-        <p>Utilisez ChatGPT et d’autres outils IA pour automatiser votre prospection, booster votre relation client, et vendre mieux, plus vite.</p>
-      </section>
-      <section class="formation">
-        <h2>📊 Excel Pro : Devenez opérationnel en 3 semaines</h2>
-        <img src="https://img.freepik.com/free-photo/top-view-excel-file-business-concept_23-2149311913.jpg" alt="Excel">
-        <p>Maîtrisez les fonctions essentielles d’Excel, tableaux croisés dynamiques, automatisation… une compétence indispensable !</p>
-      </section>
+    <h2>Nos formations disponibles :</h2>
+    <div class="formations">
+      <div class="formation-card">
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Anglais">
+        <h3>Anglais professionnel</h3>
+        <p>Boostez votre niveau en anglais avec une formation certifiante adaptée au monde pro.</p>
+      </div>
+      <div class="formation-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel">
+        <h3>Excel & Bureautique</h3>
+        <p>Maîtrisez les outils Excel, Word et PowerPoint pour gagner en productivité.</p>
+      </div>
+      <div class="formation-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Marketing">
+        <h3>Marketing Digital</h3>
+        <p>Apprenez à promouvoir un produit ou un service grâce aux outils du marketing numérique.</p>
+      </div>
     </div>
 
-    <h2>📩 Je vérifie mon éligibilité CPF</h2>
+    <h2>Vérifiez votre éligibilité CPF :</h2>
     <form action="https://script.google.com/macros/s/AKfycbyPXA-SHsztdadlDlqY9tKCOgAqiTlX0TDsR_buW8Q/exec" method="POST">
-      <label>Nom</label>
-      <input type="text" name="nom" required>
+      <label for="nom">Nom</label>
+      <input type="text" id="nom" name="nom" required>
 
-      <label>Prénom</label>
-      <input type="text" name="prenom" required>
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom" required>
 
-      <label>Adresse email</label>
-      <input type="email" name="email" required>
+      <label for="tel">Téléphone</label>
+      <input type="tel" id="tel" name="tel" required>
 
-      <label>Téléphone</label>
-      <input type="tel" name="telephone" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
 
-      <label>Formation souhaitée</label>
-      <select name="formation" required>
+      <label for="formation">Formation souhaitée</label>
+      <select id="formation" name="formation">
         <option>Anglais</option>
-        <option>Espagnol</option>
-        <option>Italien</option>
-        <option>Allemand</option>
-        <option>Excel</option>
-        <option>Word</option>
-        <option>PowerPoint</option>
-        <option>WordPress</option>
-        <option>Photoshop</option>
-        <option>Illustrator</option>
-        <option>Sketchup</option>
-        <option>IA dans le cycle de vente</option>
+        <option>Excel / Bureautique</option>
+        <option>Marketing Digital</option>
       </select>
 
-      <label>Vous êtes :</label>
-      <select name="situation">
-        <option>En activité</option>
-        <option>En recherche d’emploi</option>
-      </select>
+      <label><input type="checkbox" name="engagement" required> Je confirme ne pas rechercher une formation Permis ou CACES.</label>
 
-      <label>Avez-vous travaillé plus de 2 ans en France ?</label>
-      <select name="travail_2_ans">
-        <option>Oui</option>
-        <option>Non</option>
-      </select>
-
-      <label>
-        <input type="checkbox" name="accepte_reste_charge" required>
-        Je reconnais avoir compris que depuis le 02/05/2024, un reste à charge de 102,23€ est obligatoire, que les formations CACES et permis ne sont plus proposées, et que je choisis une formation listée ci-dessus.
-      </label>
-
-      <button type="submit">📞 Être rappelé(e) par un conseiller</button>
+      <button type="submit">Vérifier mon éligibilité</button>
+      <p class="note">*Selon votre solde CPF et votre situation.</p>
     </form>
   </div>
 
   <footer>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Logo_MonCompteFormation.svg/512px-Logo_MonCompteFormation.svg.png" alt="CPF">
-    <p>© 2025 - Centre de formations certifiées CPF. Tous droits réservés.</p>
+    © 2025 - Votre Centre Formation CPF | Mon Compte Formation | République Française
   </footer>
 </body>
 </html>
