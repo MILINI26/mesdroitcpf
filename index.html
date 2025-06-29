@@ -3,124 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formation CPF 100% Financée | Vérifiez votre éligibilité</title>
-  <meta name="description" content="Formations certifiantes CPF : Anglais, Excel, Bureautique. Sans reste à charge possible. Vérifiez votre éligibilité en 30 secondes.">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Vérifiez votre éligibilité CPF - Formations 100% financées</title>
+  <meta name="description" content="Découvrez nos formations certifiantes CPF 100% financées : Anglais, Excel, Marketing Digital. Vérifiez votre éligibilité en 30 secondes.">
+  <meta property="og:title" content="CPF : Formations 100% financées">
+  <meta property="og:description" content="Vérifiez votre éligibilité CPF en 30 secondes. Formations en ligne, certifiantes et sans reste à charge.">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/c3/Logo_CPF.svg">
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/c3/Logo_CPF.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512..." crossorigin="anonymous" />
   <style>
+    :root {
+      --main-color: #003366;
+      --accent-color: #eef3fa;
+      --text-color: #333;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      padding: 0;
       background: #f5f7fb;
-      color: #333;
+      color: var(--text-color);
     }
     header {
-      background-color: #003366;
+      background: var(--main-color);
       color: white;
-      padding: 20px 10px;
       text-align: center;
+      padding: 20px 10px;
     }
     header img {
-      height: 50px;
-      vertical-align: middle;
+      height: 60px;
+      margin-bottom: 10px;
     }
     .container {
-      max-width: 1000px;
-      margin: 30px auto;
+      max-width: 1100px;
+      margin: 40px auto;
       background: white;
-      padding: 30px;
+      padding: 40px 25px;
       border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      box-shadow: 0 0 20px rgba(0,0,0,0.08);
     }
     h1, h2 {
-      color: #003366;
+      color: var(--main-color);
+      margin-bottom: 10px;
     }
     .formations {
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      margin: 25px 0;
     }
     .formation-card {
-      width: calc(33% - 20px);
-      background: #eef3fa;
-      border-radius: 10px;
-      padding: 15px;
+      flex: 1 1 calc(33% - 20px);
+      background: var(--accent-color);
+      padding: 20px;
       text-align: center;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      transition: transform 0.2s ease;
+    }
+    .formation-card:hover {
+      transform: translateY(-5px);
     }
     .formation-card img {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 10px;
-    }
-    form {
-      margin-top: 40px;
+      width: 70px;
+      height: auto;
+      margin-bottom: 12px;
     }
     form label {
       display: block;
-      margin: 10px 0 5px;
-      font-weight: bold;
+      font-weight: 600;
+      margin-top: 15px;
     }
-    form input, form select, form button {
+    form input, form select {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #ccc;
+      padding: 12px;
       border-radius: 6px;
+      border: 1px solid #ccc;
+      margin-top: 5px;
     }
     form button {
-      background-color: #003366;
+      background: var(--main-color);
       color: white;
+      padding: 14px;
       font-weight: bold;
       border: none;
+      border-radius: 6px;
+      margin-top: 25px;
       cursor: pointer;
+      transition: background 0.3s ease;
     }
-    .note {
-      font-size: 0.9em;
-      color: #555;
+    form button:hover {
+      background: #001f4d;
     }
     footer {
       text-align: center;
-      padding: 20px;
-      background-color: #003366;
+      padding: 25px;
+      background: var(--main-color);
       color: white;
-      font-size: 0.9em;
+      margin-top: 40px;
     }
     @media (max-width: 768px) {
       .formation-card {
-        width: 100%;
+        flex: 1 1 100%;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Logo_CPF.svg/512px-Logo_CPF.svg.png" alt="Logo CPF">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Logo_CPF.svg" alt="CPF logo">
     <h1>Formations CPF 100% Finançables</h1>
-    <p>Sans reste à charge possible • Certifiantes • En ligne</p>
+    <p>Certifiantes • En ligne • Sans reste à charge possible</p>
   </header>
 
-  <div class="container">
-    <h2>Nos formations disponibles :</h2>
-    <div class="formations">
+  <main class="container">
+    <h2>Nos formations disponibles</h2>
+    <section class="formations">
       <div class="formation-card">
-        <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Anglais">
-        <h3>Anglais professionnel</h3>
-        <p>Boostez votre niveau en anglais avec une formation certifiante adaptée au monde pro.</p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Formation anglais">
+        <h3>Anglais Pro</h3>
+        <p>Améliorez votre anglais avec une formation 100% financée et adaptée au monde du travail.</p>
       </div>
       <div class="formation-card">
         <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel">
         <h3>Excel & Bureautique</h3>
-        <p>Maîtrisez les outils Excel, Word et PowerPoint pour gagner en productivité.</p>
+        <p>Devenez autonome sur Excel, Word, PowerPoint. Idéal pour le travail quotidien.</p>
       </div>
       <div class="formation-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Marketing">
+        <img src="https://cdn-icons-png.flaticon.com/512/992/992651.png" alt="Marketing Digital">
         <h3>Marketing Digital</h3>
-        <p>Apprenez à promouvoir un produit ou un service grâce aux outils du marketing numérique.</p>
+        <p>Apprenez à générer des leads et booster votre activité en ligne.</p>
       </div>
-    </div>
+    </section>
 
-    <h2>Vérifiez votre éligibilité CPF :</h2>
+    <h2>Vérifiez votre éligibilité en 30s :</h2>
     <form action="https://script.google.com/macros/s/AKfycbyPXA-SHsztdadlDlqY9tKCOgAqiTlX0TDsR_buW8Q/exec" method="POST">
       <label for="nom">Nom</label>
       <input type="text" id="nom" name="nom" required>
@@ -135,21 +148,21 @@
       <input type="email" id="email" name="email" required>
 
       <label for="formation">Formation souhaitée</label>
-      <select id="formation" name="formation">
-        <option>Anglais</option>
-        <option>Excel / Bureautique</option>
-        <option>Marketing Digital</option>
+      <select id="formation" name="formation" required>
+        <option value="">-- Choisissez --</option>
+        <option value="Anglais">Anglais</option>
+        <option value="Excel / Bureautique">Excel / Bureautique</option>
+        <option value="Marketing Digital">Marketing Digital</option>
       </select>
 
       <label><input type="checkbox" name="engagement" required> Je confirme ne pas rechercher une formation Permis ou CACES.</label>
 
       <button type="submit">Vérifier mon éligibilité</button>
-      <p class="note">*Selon votre solde CPF et votre situation.</p>
     </form>
-  </div>
+  </main>
 
   <footer>
-    © 2025 - Votre Centre Formation CPF | Mon Compte Formation | République Française
+    © 2025 - Votre Centre CPF | Mon Compte Formation | République Française
   </footer>
 </body>
 </html>
