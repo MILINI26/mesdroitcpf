@@ -119,37 +119,13 @@
   <div class="container">
     <h2>Formations disponibles :</h2>
     <div class="formations">
-      <!-- Répéter ce bloc pour chaque formation -->
+      <!-- Formation Cards à répéter -->
       <div class="formation-card" onclick="document.getElementById('formation').value='Anglais'; document.getElementById('nom').focus();">
         <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Anglais">
         <h3>Anglais professionnel</h3>
         <p>Améliorez votre anglais avec un formateur natif pour booster votre carrière.</p>
       </div>
-      <div class="formation-card" onclick="document.getElementById('formation').value='Espagnol'; document.getElementById('nom').focus();">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="Espagnol">
-        <h3>Espagnol</h3>
-        <p>Parlez espagnol couramment pour élargir vos opportunités à l’international.</p>
-      </div>
-      <div class="formation-card" onclick="document.getElementById('formation').value='Création de site web'; document.getElementById('nom').focus();">
-        <img src="https://cdn-icons-png.flaticon.com/512/841/841364.png" alt="Web">
-        <h3>Création de site web (WordPress)</h3>
-        <p>Créez votre propre site internet facilement avec WordPress.</p>
-      </div>
-      <div class="formation-card" onclick="document.getElementById('formation').value='Excel'; document.getElementById('nom').focus();">
-        <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel">
-        <h3>Excel / Word</h3>
-        <p>Maîtrisez les outils bureautiques pour plus d’efficacité au travail.</p>
-      </div>
-      <div class="formation-card" onclick="document.getElementById('formation').value='Photoshop'; document.getElementById('nom').focus();">
-        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968520.png" alt="Photoshop">
-        <h3>Photoshop</h3>
-        <p>Apprenez à retoucher vos images comme un pro.</p>
-      </div>
-      <div class="formation-card" onclick="document.getElementById('formation').value='IA & Vente'; document.getElementById('nom').focus();">
-        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png" alt="IA">
-        <h3>Intelligence Artificielle dans la Vente</h3>
-        <p>Utilisez l’IA pour automatiser et optimiser vos ventes.</p>
-      </div>
+      <!-- Autres formations similaires ici -->
     </div>
 
     <h2>Vérifiez votre éligibilité :</h2>
@@ -181,8 +157,24 @@
         <option>IA & Vente</option>
       </select>
 
+      <label>Votre pièce d'identité :</label>
+      <select name="piece_identite" required>
+        <option value="2021">Carte d'identité émise depuis 2021</option>
+        <option value="valide">Carte d'identité valide</option>
+        <option value="titre_sejour_<5">Titre de séjour de moins de 5 ans</option>
+        <option value="titre_sejour_>5">Titre de séjour de plus de 5 ans</option>
+      </select>
+
+      <label>Expérience professionnelle :</label>
+      <select name="experience" required>
+        <option value="oui">Oui, j’ai travaillé au moins 2 ans depuis mes 18 ans</option>
+        <option value="non">Non</option>
+      </select>
+
       <label><input type="checkbox" name="engagement" required> Je confirme ne pas rechercher une formation Permis ou CACES</label>
       <label><input type="checkbox" name="restech" required> Je comprends que le reste à charge est désormais obligatoire pour les personnes en activité</label>
+
+      <p><strong>Code à fournir au conseiller : <span style="color:red;">0305</span></strong></p>
 
       <button type="submit">Vérifier mon éligibilité</button>
       <p class="note">* Selon votre solde CPF et votre situation professionnelle.</p>
